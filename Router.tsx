@@ -11,14 +11,17 @@ export const RootStack = createNativeStackNavigator({
         headerTitleStyle: {color: "white"}
     },
     screens: {
+
       Home: {
         screen: HomeScreen,
+        initialParams: {post : ""},
         options: {
             title: "Home",
             headerStyle: {backgroundColor: "dodgerblue"}
         },
         },
       Details: {
+        initialParams: { itemId: 42},
         screen: DetailsScreen,
         options: {
             title: "Details"
